@@ -24,7 +24,11 @@
 	
 	(III)	bundling of data with the methods/functions that operate on it, such as within classes
 
-(i)
+(i) The main difference between the two workflows is that in the Integration manager workflow the integration manager
+	handles all integration/merging and in the Dictator and lieutenants workflow some integration/merging is handled
+	by the lieutenant repositories.
 
-(j)
+(j) The team of 100 developers would better benefit from the "Dictator and Lieutenants" workflow because with that many
+	people working on a project it would be more efficient and less complicated if the task of handling merges was split between multiple repositories
+	instead of one. 
 
