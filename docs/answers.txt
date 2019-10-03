@@ -1,4 +1,13 @@
-(a)
+(a)	C:\Users\Ben\Documents\GitHub\assignment2>git push
+	Enumerating objects: 9, done.
+	Counting objects: 100% (9/9), done.
+	Delta compression using up to 4 threads
+	Compressing objects: 100% (5/5), done.
+	Writing objects: 100% (7/7), 829 bytes | 414.00 KiB/s, done.
+	Total 7 (delta 2), reused 0 (delta 0)
+	remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+	To https://github.com/WestBP/assignment2.git
+	2938bef..b94f014  master -> master
 
 (b) 11 total commits 
 	
