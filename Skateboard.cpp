@@ -12,12 +12,14 @@ Skateboard::Skateboard(string brand, string model) {
 Skateboard::~Skateboard() = default;
 
 double Skateboard::mileageEstimate(double time) {
+	//random double generation from stack overflow
     double cur_mileage= (0.5 - 0.1) * ( (double)rand() / (double)RAND_MAX ) + 0.1;
 	double mileage = cur_mileage * time;
     if(time>25)
 	{
 		if(time<250)
 		{
+			//random double generation from stack overflow 
 			double extra = ((time/3) - 1) * ( (double)rand() / (double)RAND_MAX ) + 1;
 			mileage=mileage+extra;
 		}

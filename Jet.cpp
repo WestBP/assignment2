@@ -31,7 +31,7 @@ void Jet::setNumberOfEngines(int numEngines) {
 
 double Jet::mileageEstimate(double time) {
    
-
+	//random generation from stackoverflow
 	int cur_mileage = rand() % ((100 - 40) + 1) + 40; 
 	
 	double mileage = cur_mileage * time;
