@@ -12,12 +12,20 @@ Skateboard::Skateboard(string brand, string model) {
 Skateboard::~Skateboard() = default;
 
 double Skateboard::mileageEstimate(double time) {
-    double mileage = 3 * time;
-    mileage += mileage * 2;
+    double cur_mileage= (0.5 - 0.1) * ( (double)rand() / (double)RAND_MAX ) + 0.1;
+	double mileage = cur_mileage * time;
+    if(time>25)
+	{
+		if(time<250)
+		{
+			double extra = ((time/3) - 1) * ( (double)rand() / (double)RAND_MAX ) + 1;
+			mileage=mileage+extra;
+		}
+	}
     return mileage;
 }
 
 string Skateboard::toString() {
     string s = "-> Skateboard\n\t";
-    return "-> Skateboard\n" + Vehicle::toString()
+    return "-> Skateboard\n" + Vehicle::toString();
 }
