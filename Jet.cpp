@@ -4,6 +4,7 @@
 
 #include "Jet.h"
 
+
 Jet::Jet() {
     numberOfEngines = 1;
     setBrand("Custom");
@@ -30,7 +31,8 @@ void Jet::setNumberOfEngines(int numEngines) {
 
 double Jet::mileageEstimate(double time) {
    
-	int cur_mileage = std::rand() % (100 + 1 - 40) + 40;
+
+	int cur_mileage = rand() % ((100 - 40) + 1) + 40; 
 	
 	double mileage = cur_mileage * time;
     if (fuelType == "Rocket") 
