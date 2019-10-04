@@ -41,3 +41,6 @@
 	people working on a project it would be more efficient and less complicated if the task of handling merges was split between multiple repositories
 	instead of one. 
 
+#5: The Driving Simulator is using both polymorphism and encapsulation. The vehicle interface is used as a base for all the different
+	specfic kinds of vehicles in the simulator which is polymorphism. Many of the types of vehicles have their specific member data that
+	has an effect on calculating the mileage of that vehicle, this is bundled into the class and is an example of encapsulation.
