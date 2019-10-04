@@ -9,7 +9,7 @@
 class Unicycle : public Vehicle {
 
 private:
-   
+	int riderWeight;
 
 public:
     explicit Unicycle(string brand, string model, int userWeight);
