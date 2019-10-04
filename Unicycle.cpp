@@ -23,7 +23,7 @@ void Unicycle::setWeight(int Weight) {
 
 double Unicycle::mileageEstimate(double time) {
     double mileage = 1 * time;
-    mileage += mileage - (Weight * 0.5);
+    mileage += mileage - (riderWeight * 0.5);
     return mileage;
 }
 
