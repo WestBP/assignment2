@@ -29,9 +29,16 @@ void Jet::setNumberOfEngines(int numEngines) {
 }
 
 double Jet::mileageEstimate(double time) {
-    double mileage = 15 * time;
-    if (fuelType == "electricity") {
-        mileage += mileage * 0.05;
+   
+	int cur_mileage = std::rand() % (100 + 1 - 40) + 40;
+	
+	double mileage = cur_mileage * time;
+    if (fuelType == "Rocket") 
+	{
+        if(numberOfEngines>2)
+		{
+		mileage += mileage * (0.055*numberOfEngines);
+		}
     }
     return mileage;
 }
